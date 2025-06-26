@@ -117,8 +117,8 @@ const FarmerProfiles = () => {
                 <p className="text-sm text-gray-600">Pending Alerts</p>
               </div>
             </div>
-          </Card>
-        </div>
+          </CardContent>
+        </Card>
       </div>
 
       {/* Farmer Profiles Grid */}
