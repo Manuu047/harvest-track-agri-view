@@ -16,10 +16,9 @@ const HarvestMetrics = () => {
   ];
 
   const cropYields = [
-    { crop: "Tomatoes", yield: 450, target: 400 },
-    { crop: "Corn", yield: 320, target: 350 },
-    { crop: "Potatoes", yield: 280, target: 300 },
-    { crop: "Carrots", yield: 197, target: 200 },
+    { crop: "Batian", yield: 450, target: 400 },
+    { crop: "SL34&28", yield: 320, target: 350 },
+    { crop: "Ruiru11", yield: 280, target: 300 },
   ];
 
   return (
@@ -51,10 +50,10 @@ const HarvestMetrics = () => {
         </CardContent>
       </Card>
 
-      {/* Crop Yields vs Targets */}
+      {/* Coffee Varieties Yields vs Targets */}
       <Card>
         <CardHeader>
-          <CardTitle>Crop Yields vs Targets</CardTitle>
+          <CardTitle>Coffee Varieties Yields vs Targets</CardTitle>
         </CardHeader>
         <CardContent>
           <ResponsiveContainer width="100%" height={300}>
@@ -78,12 +77,12 @@ const HarvestMetrics = () => {
         <CardContent>
           <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
             {[
-              { name: "North Field A", crop: "Tomatoes", status: "harvesting", progress: 75 },
-              { name: "South Field B", crop: "Corn", status: "ready", progress: 100 },
-              { name: "East Field C", crop: "Potatoes", status: "growing", progress: 45 },
-              { name: "West Field D", crop: "Carrots", status: "harvesting", progress: 60 },
-              { name: "Center Field E", crop: "Lettuce", status: "ready", progress: 100 },
-              { name: "North Field F", crop: "Beans", status: "growing", progress: 30 },
+              { name: "North Field A", crop: "Batian", status: "harvesting", progress: 75 },
+              { name: "South Field B", crop: "SL34&28", status: "ready", progress: 100 },
+              { name: "East Field C", crop: "Ruiru11", status: "growing", progress: 45 },
+              { name: "West Field D", crop: "Batian", status: "harvesting", progress: 60 },
+              { name: "Center Field E", crop: "SL34&28", status: "ready", progress: 100 },
+              { name: "North Field F", crop: "Ruiru11", status: "growing", progress: 30 },
             ].map((field, index) => (
               <div key={index} className="p-4 bg-gray-50 rounded-lg border">
                 <div className="flex justify-between items-start mb-2">

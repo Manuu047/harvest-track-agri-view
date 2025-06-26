@@ -17,11 +17,9 @@ const Analytics = () => {
   ];
 
   const cropDistribution = [
-    { name: "Tomatoes", value: 35, color: "#22c55e" },
-    { name: "Corn", value: 25, color: "#3b82f6" },
-    { name: "Potatoes", value: 20, color: "#f59e0b" },
-    { name: "Carrots", value: 12, color: "#ef4444" },
-    { name: "Others", value: 8, color: "#8b5cf6" },
+    { name: "Batian", value: 45, color: "#22c55e" },
+    { name: "SL34&28", value: 35, color: "#3b82f6" },
+    { name: "Ruiru11", value: 20, color: "#f59e0b" },
   ];
 
   const fieldPerformance = [
@@ -154,10 +152,10 @@ const Analytics = () => {
           </CardContent>
         </Card>
 
-        {/* Crop Distribution */}
+        {/* Coffee Variety Distribution */}
         <Card>
           <CardHeader>
-            <CardTitle>Crop Distribution</CardTitle>
+            <CardTitle>Coffee Variety Distribution</CardTitle>
           </CardHeader>
           <CardContent>
             <ResponsiveContainer width="100%" height={300}>

@@ -15,8 +15,8 @@ const Index = () => {
 
   // Mock data for recent activities
   const recentActivities = [
-    { id: 1, type: "harvest", message: "Tomatoes harvested: 250kg at North Field", time: "2 hours ago", status: "completed" },
-    { id: 2, type: "alert", message: "Low yield alert for Corn Field B", time: "4 hours ago", status: "warning" },
+    { id: 1, type: "harvest", message: "Batian harvested: 250kg at North Field", time: "2 hours ago", status: "completed" },
+    { id: 2, type: "alert", message: "Low yield alert for SL34&28 Field B", time: "4 hours ago", status: "warning" },
     { id: 3, type: "sync", message: "Data synchronized from 5 devices", time: "6 hours ago", status: "info" },
   ];
 
@@ -30,7 +30,7 @@ const Index = () => {
               <div className="w-8 h-8 bg-green-600 rounded-lg flex items-center justify-center">
                 <Database className="w-5 h-5 text-white" />
               </div>
-              <h1 className="text-xl font-bold text-gray-900">HarvestTrack Pro</h1>
+              <h1 className="text-xl font-bold text-gray-900">Kamasian Coffee Farm</h1>
             </div>
             <div className="flex items-center space-x-4">
               <Button variant="outline" size="sm">
@@ -51,10 +51,10 @@ const Index = () => {
         {/* Welcome Section */}
         <div className="mb-8">
           <h2 className="text-3xl font-bold text-gray-900 mb-2">
-            Welcome to your Farm Dashboard
+            Welcome to your Coffee Farm Dashboard
           </h2>
           <p className="text-gray-600">
-            Track harvests, monitor yields, and manage your agricultural operations in real-time.
+            Track coffee harvests, monitor yields, and manage your coffee plantation operations in real-time.
           </p>
         </div>
 

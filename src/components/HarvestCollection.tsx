@@ -21,10 +21,10 @@ const HarvestCollection = () => {
 
   // Mock data for recent collections
   const recentCollections = [
-    { id: 1, crop: "Tomatoes", field: "North Field A", quantity: "250kg", worker: "John Smith", time: "10:30 AM", quality: "Grade A" },
-    { id: 2, crop: "Corn", field: "South Field B", quantity: "180kg", worker: "Maria Garcia", time: "09:45 AM", quality: "Grade B" },
-    { id: 3, crop: "Potatoes", field: "East Field C", quantity: "320kg", worker: "David Chen", time: "08:15 AM", quality: "Grade A" },
-    { id: 4, crop: "Carrots", field: "West Field D", quantity: "150kg", worker: "Sarah Johnson", time: "07:30 AM", quality: "Grade A" },
+    { id: 1, crop: "Batian", field: "North Field A", quantity: "250kg", worker: "John Smith", time: "10:30 AM", quality: "Grade A" },
+    { id: 2, crop: "SL34&28", field: "South Field B", quantity: "180kg", worker: "Maria Garcia", time: "09:45 AM", quality: "Grade B" },
+    { id: 3, crop: "Ruiru11", field: "East Field C", quantity: "320kg", worker: "David Chen", time: "08:15 AM", quality: "Grade A" },
+    { id: 4, crop: "Batian", field: "West Field D", quantity: "150kg", worker: "Sarah Johnson", time: "07:30 AM", quality: "Grade A" },
   ];
 
   const handleSubmit = (e: React.FormEvent) => {
@@ -55,18 +55,15 @@ const HarvestCollection = () => {
             <form onSubmit={handleSubmit} className="space-y-4">
               <div className="grid grid-cols-2 gap-4">
                 <div>
-                  <Label htmlFor="crop">Crop Type</Label>
+                  <Label htmlFor="crop">Coffee Variety</Label>
                   <Select value={formData.crop} onValueChange={(value) => handleInputChange("crop", value)}>
                     <SelectTrigger>
-                      <SelectValue placeholder="Select crop" />
+                      <SelectValue placeholder="Select variety" />
                     </SelectTrigger>
                     <SelectContent>
-                      <SelectItem value="tomatoes">Tomatoes</SelectItem>
-                      <SelectItem value="corn">Corn</SelectItem>
-                      <SelectItem value="potatoes">Potatoes</SelectItem>
-                      <SelectItem value="carrots">Carrots</SelectItem>
-                      <SelectItem value="lettuce">Lettuce</SelectItem>
-                      <SelectItem value="beans">Beans</SelectItem>
+                      <SelectItem value="batian">Batian</SelectItem>
+                      <SelectItem value="sl34-28">SL34&28</SelectItem>
+                      <SelectItem value="ruiru11">Ruiru11</SelectItem>
                     </SelectContent>
                   </Select>
                 </div>
@@ -188,7 +185,7 @@ const HarvestCollection = () => {
             <table className="w-full border-collapse">
               <thead>
                 <tr className="border-b border-gray-200">
-                  <th className="text-left p-3 font-medium text-gray-900">Crop</th>
+                  <th className="text-left p-3 font-medium text-gray-900">Coffee Variety</th>
                   <th className="text-left p-3 font-medium text-gray-900">Field</th>
                   <th className="text-left p-3 font-medium text-gray-900">Quantity</th>
                   <th className="text-left p-3 font-medium text-gray-900">Quality</th>
